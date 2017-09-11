@@ -22,4 +22,4 @@
 * **navbar** works as expected at 1634
 * removing unwanted JSX at 1635
 * finish editing **navbar** component at 1645
-* 
+* start moving navbar routes into seperate file at 1647
