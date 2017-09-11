@@ -15,4 +15,11 @@
 * link **home** component to `/` path at 1620
 * decide on contents for **home** components later
 * start writing navbar at 1623
+* finish **navbar** component at 1631
+* test navbar component at 1631
+* throws syntax error at 1632
+* remove comments from JSX at 1632
+* **navbar** works as expected at 1634
+* removing unwanted JSX at 1635
+* finish editing **navbar** component at 1645
 * 
