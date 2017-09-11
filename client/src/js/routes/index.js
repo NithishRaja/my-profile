@@ -1,10 +1,10 @@
 import React from 'react';
 import {Route, Switch} from "react-router-dom";
-
+import NotFound from "./../components/notFound";
 
 const _routesJSX = <Switch>
 
-                    <Route path="*" render={() => <h1>not found</h1>} />
+                    <Route path="*" component={NotFound} />
                   </Switch>;
 
 export default _routesJSX;
