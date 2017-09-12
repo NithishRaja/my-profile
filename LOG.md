@@ -23,3 +23,16 @@
 * removing unwanted JSX at 1635
 * finish editing **navbar** component at 1645
 * start moving navbar routes into seperate file at 1647
+* finish moving navbar routes into seperate file at 1652
+* **ended at 1652 on 11-09-2017**
+
+* **started at 1853 on 12-09-2017**
+* start adding links to **navbar** component at 1853
+* finished adding links to **navbar** component at 1901
+* decided to move the links in **navbar** component to seperate file at 1902
+* removed JSX for links from **navbar** component at 1903
+* decided to add links back for temporary use at 1904
+* test new code at 1907
+* since different router is used for head and root, root doesn't change if link is clicked inside head
+* moved head routes inside root at 1914
+* works as expected at 1914
