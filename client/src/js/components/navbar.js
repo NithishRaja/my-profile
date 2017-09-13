@@ -19,15 +19,7 @@ export default class Navbar extends Component{
                         </div>
                       </nav>;
 
-    this._linkJSX = <ul className="nav nav-tabs">
-  <li role="presentation"><Link to="/">Home</Link></li>
-  <li role="presentation"><Link to="/about">about</Link></li>
-  <li role="presentation"><Link to="/contact">contact</Link></li>
-  <li role="presentation"><Link to="/blog">blog</Link></li>
-  <li role="presentation"><Link to="/gallery">gallery</Link></li>
-</ul>;
-
-  this._componentLayoutJSX = <div>{this._navbarJSX}{this._linkJSX}</div>
+    this._componentLayoutJSX = this._navbarJSX;
 
   }
 

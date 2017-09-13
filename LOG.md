@@ -36,3 +36,25 @@
 * since different router is used for head and root, root doesn't change if link is clicked inside head
 * moved head routes inside root at 1914
 * works as expected at 1914
+* must decide on content for pages before writing component
+* **ended at 1922 on 12-09-2017**
+
+* **started at 1446 on 13-09-2017**
+* start adding profile card to **home** component at 1450
+* moved links JSx inside **home** component at 1510
+* finished adding intro/bio at 1513
+* start adding page cover at 1513
+* finished adding page cover at 1517
+* works as expected at 1518
+* start moving links JSX into separate component at 1518
+* finished moving links JSX into separate component at 1521
+* start writing separate routes for **links** component at 1522
+* finished writing separate routes for **links** component at 1524
+* works as expected at 1524
+* start moving page-cover into separate component at 1525
+* finished moving page-cover into separate component at 1529
+* start writing seperate routes for **pagecover** component at 1530
+* finished writing seperate routes for **pagecover** component at 1532
+* works as expected at 1532
+* moved bio JSX into seperate component at 1536, works as expected
+* 
