@@ -15,7 +15,7 @@ const _routesJSX = <div>
                     <Switch>
                       <Route path="/"  exact component={Home} />
                       <Route path="/gallery"  exact component={Gallery} />
-                      <Route path="/blog"  exact component={Blog} />
+                      <Route path="/blog" exact component={Blog} />
                       <Route path="*" component={NotFound} />
                     </Switch>
                   </div>;

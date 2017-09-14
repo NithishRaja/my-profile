@@ -70,4 +70,7 @@
 * **started at 1140 on 14-09-2017**
 * start making **blog** component at 1140
 * finished making **blog** component at 1141
+* start making **preview** component at 1147
+* finished **preview** component at 1200
+* start **article** component at 1201
 * 
