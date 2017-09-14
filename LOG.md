@@ -61,4 +61,8 @@
 
 * **started at 0842 on 14-09-2017**
 * created **gallery** component at 0846
-* 
+* add featuredImage and album covers at 0855
+* separated featuredImage and album covers into separate components at 0859
+* start making gallery components scalable at 0900
+* finished making gallery component scalable at 0911
+* **ended at 0912 on 14-09-2017**
