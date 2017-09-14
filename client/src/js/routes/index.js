@@ -6,6 +6,7 @@ import pagecover from "./pagecover";
 import NotFound from "./../components/notFound";
 import Home from "./../components/home";
 import Gallery from "./../components/gallery";
+import Blog from "./../components/blog";
 
 const _routesJSX = <div>
                     {headRoutes}
@@ -14,6 +15,7 @@ const _routesJSX = <div>
                     <Switch>
                       <Route path="/"  exact component={Home} />
                       <Route path="/gallery"  exact component={Gallery} />
+                      <Route path="/blog"  exact component={Blog} />
                       <Route path="*" component={NotFound} />
                     </Switch>
                   </div>;
