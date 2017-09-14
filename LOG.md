@@ -73,4 +73,5 @@
 * start making **preview** component at 1147
 * finished **preview** component at 1200
 * start **article** component at 1201
-* 
+* removed article component at 1218
+* **ended at 1218 on 14-09-2017**
