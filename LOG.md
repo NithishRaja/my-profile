@@ -22,14 +22,14 @@
 * **navbar** works as expected at 1634
 * removing unwanted JSX at 1635
 * finish editing **navbar** component at 1645
-* start moving navbar routes into seperate file at 1647
-* finish moving navbar routes into seperate file at 1652
+* start moving navbar routes into separate file at 1647
+* finish moving navbar routes into separate file at 1652
 * **ended at 1652 on 11-09-2017**
 
 * **started at 1853 on 12-09-2017**
 * start adding links to **navbar** component at 1853
 * finished adding links to **navbar** component at 1901
-* decided to move the links in **navbar** component to seperate file at 1902
+* decided to move the links in **navbar** component to separate file at 1902
 * removed JSX for links from **navbar** component at 1903
 * decided to add links back for temporary use at 1904
 * test new code at 1907
@@ -41,7 +41,7 @@
 
 * **started at 1446 on 13-09-2017**
 * start adding profile card to **home** component at 1450
-* moved links JSx inside **home** component at 1510
+* moved links JSX inside **home** component at 1510
 * finished adding intro/bio at 1513
 * start adding page cover at 1513
 * finished adding page cover at 1517
@@ -53,8 +53,12 @@
 * works as expected at 1524
 * start moving page-cover into separate component at 1525
 * finished moving page-cover into separate component at 1529
-* start writing seperate routes for **pagecover** component at 1530
-* finished writing seperate routes for **pagecover** component at 1532
+* start writing separate routes for **pagecover** component at 1530
+* finished writing separate routes for **pagecover** component at 1532
 * works as expected at 1532
-* moved bio JSX into seperate component at 1536, works as expected
+* moved bio JSX into separate component at 1536, works as expected
+* **ended at 1539 on 13-09-2017**
+
+* **started at 0842 on 14-09-2017**
+* created **gallery** component at 0846
 * 

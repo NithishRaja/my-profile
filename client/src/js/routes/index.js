@@ -5,6 +5,7 @@ import linkRoutes from "./links";
 import pagecover from "./pagecover";
 import NotFound from "./../components/notFound";
 import Home from "./../components/home";
+import Gallery from "./../components/gallery";
 
 const _routesJSX = <div>
                     {headRoutes}
@@ -12,6 +13,7 @@ const _routesJSX = <div>
                     {linkRoutes}
                     <Switch>
                       <Route path="/"  exact component={Home} />
+                      <Route path="/gallery"  exact component={Gallery} />
                       <Route path="*" component={NotFound} />
                     </Switch>
                   </div>;
