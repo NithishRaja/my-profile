@@ -80,4 +80,9 @@
 * start implement redux for **home** component at 1652
 * wrote container for **home** component at 1657
 * added reducer to carry bio info at 1702
+* start writing container for **gallery** component at 1705
+* **ended at 1707 on 16-09-2017**
+
+* **started at 1754 on 16-09-2017**
+* finished container at 1756
 * 

@@ -5,7 +5,7 @@ import linkRoutes from "./links";
 import pagecover from "./pagecover";
 import NotFound from "./../components/notFound";
 import Home from "./../containers/homeContainer";
-import Gallery from "./../components/gallery";
+import Gallery from "./../containers/galleryContainer";
 import Blog from "./../components/blog";
 
 const _routesJSX = <div>
