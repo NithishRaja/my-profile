@@ -91,4 +91,5 @@
 * finished container at 1807
 * made reducer for managing blogContent at 1811
 * app works as expected at 1811
+* finished **contact** component at 1843
 * 

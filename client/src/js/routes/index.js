@@ -7,6 +7,8 @@ import NotFound from "./../components/notFound";
 import Home from "./../containers/homeContainer";
 import Gallery from "./../containers/galleryContainer";
 import Blog from "./../containers/blogContainer";
+import Contact from "./../components/contact";
+import About from "./../components/about";
 
 const _routesJSX = <div>
                     {headRoutes}
@@ -16,6 +18,8 @@ const _routesJSX = <div>
                       <Route path="/"  exact component={Home} />
                       <Route path="/gallery"  exact component={Gallery} />
                       <Route path="/blog" exact component={Blog} />
+                      <Route path="/contact" exact component={Contact} />
+                      <Route path="/about" exact component={About} />
                       <Route path="*" component={NotFound} />
                     </Switch>
                   </div>;
