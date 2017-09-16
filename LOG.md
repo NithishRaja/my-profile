@@ -92,4 +92,7 @@
 * made reducer for managing blogContent at 1811
 * app works as expected at 1811
 * finished **contact** component at 1843
-* 
+* start **about** component at 1844
+* finished **about** component at 1859
+* app works as expected at 1859
+* **ended at 1859 on 16-09-2017**
