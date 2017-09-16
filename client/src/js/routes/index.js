@@ -6,7 +6,7 @@ import pagecover from "./pagecover";
 import NotFound from "./../components/notFound";
 import Home from "./../containers/homeContainer";
 import Gallery from "./../containers/galleryContainer";
-import Blog from "./../components/blog";
+import Blog from "./../containers/blogContainer";
 
 const _routesJSX = <div>
                     {headRoutes}

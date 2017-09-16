@@ -85,4 +85,10 @@
 
 * **started at 1754 on 16-09-2017**
 * finished container at 1756
+* added reducer for featuredImage and albumCover at 1802
+* app works as expected at 1802
+* start writing container for **blog** component at 1803
+* finished container at 1807
+* made reducer for managing blogContent at 1811
+* app works as expected at 1811
 * 
