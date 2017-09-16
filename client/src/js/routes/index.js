@@ -4,7 +4,7 @@ import headRoutes from "./head";
 import linkRoutes from "./links";
 import pagecover from "./pagecover";
 import NotFound from "./../components/notFound";
-import Home from "./../components/home";
+import Home from "./../containers/homeContainer";
 import Gallery from "./../components/gallery";
 import Blog from "./../components/blog";
 

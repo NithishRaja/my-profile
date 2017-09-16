@@ -75,3 +75,9 @@
 * start **article** component at 1201
 * removed article component at 1218
 * **ended at 1218 on 14-09-2017**
+
+* **started at 1651 on 16-09-2017**
+* start implement redux for **home** component at 1652
+* wrote container for **home** component at 1657
+* added reducer to carry bio info at 1702
+* 
