@@ -96,3 +96,8 @@
 * finished **about** component at 1859
 * app works as expected at 1859
 * **ended at 1859 on 16-09-2017**
+
+* **started at 2122 on 17-09-2017**
+* start to use redux to refactor **about** and **contact** components at 2123
+* finished refactoring **contact** component using redux at 2151
+* 

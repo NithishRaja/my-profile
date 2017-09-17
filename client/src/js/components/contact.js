@@ -5,21 +5,18 @@ export default class Contact extends Component{
   constructor(props){
     super(props);
 
-    this._sendEmailJSX = <div className="alert alert-info"><strong>{"Email:"}</strong>{"nithishraja@ymail.com, f20160388@hyderabad.bits-pilani.ac.in"}</div>;
+        console.log(this.props);
 
-    this._mobileNumberJSX = <div className="alert alert-info"><strong>{"Mobile: "}</strong>{"9500666287"}</div>;
+    this._sendEmailJSX = <div className="alert alert-info"><strong>{"Email:"}</strong>{this.props.contact.email.map(email => {return ` ${email}`})}</div>;
 
-    this.socialMediaInfo = [
-      ["facebook", "https://www.facebook.com/nithish.raja.94"],
-      ["linkedIn", "https://www.linkedin.com/in/nithish-raja-1a81ba140/"]
-    ];
+    this._mobileNumberJSX = <div className="alert alert-info"><strong>{"Mobile: "}</strong>{this.props.contact.mobile.map(mobile => mobile)}</div>;
 
-    this._socialMediaJSX = this.socialMediaInfo.map((media, index) => <div className="alert alert-info"><strong>{media[0]}: </strong>{media[1]}</div>);
+    this._socialMediaJSX = this.props.contact.socialMedia.map((media, index) => <div key={index} className="alert alert-info"><strong>{media[0]}: </strong>{media[1]}</div>);
 
     this._locationJSX = <div className="alert alert-default">
-                          <div className="alert alert-info"><strong>{"lattitude"}: </strong>17.5449703</div>
-                          <div className="alert alert-info"><strong>{"longitude"}: </strong>78.5716459</div>
-                          <div className="alert alert-info"><strong>{"address"}: </strong>{"Shameerpet Mandal, Jawahar Nagar, Hyderabad, Telangana 500078, India"}</div>
+                          <div className="alert alert-info"><strong>{"lattitude"}: </strong>{this.props.contact.location.lattitude}</div>
+                          <div className="alert alert-info"><strong>{"longitude"}: </strong>{this.props.contact.location.longitude}</div>
+                          <div className="alert alert-info"><strong>{"address"}: </strong>{this.props.contact.location.address}</div>
                         </div>;
 
     this._componentLayoutJSX = <div className="well">{this._sendEmailJSX}{this._mobileNumberJSX}{this._socialMediaJSX}{this._locationJSX}</div>;

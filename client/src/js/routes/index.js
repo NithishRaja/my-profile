@@ -7,8 +7,8 @@ import NotFound from "./../components/notFound";
 import Home from "./../containers/homeContainer";
 import Gallery from "./../containers/galleryContainer";
 import Blog from "./../containers/blogContainer";
-import Contact from "./../components/contact";
-import About from "./../components/about";
+import Contact from "./../containers/contactContainer";
+import About from "./../containers/aboutContainer";
 
 const _routesJSX = <div>
                     {headRoutes}
