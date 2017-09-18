@@ -116,3 +116,8 @@
 * finished action listeners for buttons in **navbar** component at 1554
 * app works as expected at 1555
 * **ended at 1555 on 18-09-2017**
+
+* **started at 1737 on 18-09-2017**
+* made TODO.md file at 1759
+* start making **article** component at 1801
+* 

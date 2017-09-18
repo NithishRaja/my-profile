@@ -8,9 +8,9 @@ export default class Links extends Component{
     super(props);
 
     this._linkJSX = <ul className="nav nav-tabs">
-                      <li role="presentation"><Link id="home" to="/">Home</Link></li>
-                      <li role="presentation"><Link id="blog" to="/blog">Blog</Link></li>
-                      <li role="presentation"><Link id="gallery" to="/gallery">Gallery</Link></li>
+                      <li className="nav-item" role="presentation"><Link id="home" className={"nav-link"} to="/">Home</Link></li>
+                      <li className="nav-item" role="presentation"><Link id="blog" className={"nav-link"} to="/blog">Blog</Link></li>
+                      <li className="nav-item" role="presentation"><Link id="gallery" className={"nav-link"} to="/gallery">Gallery</Link></li>
                     </ul>;
 
     this._componentLayoutJSX = this._linkJSX;

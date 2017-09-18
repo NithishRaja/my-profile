@@ -12,7 +12,7 @@ export default class Navbar extends Component{
                           <div className="navbar-header">
                             <Link className="navbar-brand" to="/">Nithish Raja</Link>
                           </div>
-                          <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <div className="collapse navbar-collapse">
                             <ul className="nav navbar-nav navbar-right">
                               <li><Link id="about" to="/about">About</Link></li>
                               <li><Link id="contact" to="/contact">Contact</Link></li>
@@ -38,16 +38,14 @@ export default class Navbar extends Component{
     Rx.Observable.fromEvent(document.querySelector("#about"), "click")
       .subscribe({
         next: (event) => {
-          event.preventDefault();
           this.props.updateCurrentPage(document.querySelector("#about").innerHTML);
         }
       });
 
-    Rx.Observable.fromEvent(document.querySelector("#about"), "click")
+    Rx.Observable.fromEvent(document.querySelector("#contact"), "click")
       .subscribe({
         next: (event) => {
-          event.preventDefault();
-          this.props.updateCurrentPage(document.querySelector("#about").innerHTML);
+          this.props.updateCurrentPage(document.querySelector("#contact").innerHTML);
         }
       });
 
