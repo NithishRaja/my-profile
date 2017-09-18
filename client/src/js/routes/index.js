@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route, Switch} from "react-router-dom";
-import headRoutes from "./head";
+import navbarRoutes from "./navbar";
 import linkRoutes from "./links";
 import pagecover from "./pagecover";
 import NotFound from "./../components/notFound";
@@ -11,7 +11,7 @@ import Contact from "./../containers/contactContainer";
 import About from "./../containers/aboutContainer";
 
 const _routesJSX = <div>
-                    {headRoutes}
+                    {navbarRoutes}
                     {pagecover}
                     {linkRoutes}
                     <Switch>

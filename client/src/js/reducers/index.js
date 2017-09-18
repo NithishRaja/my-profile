@@ -5,6 +5,7 @@ import albumCover from "./albumCoverReducer";
 import blogContent from "./blogContentReducer";
 import contact from "./contactReducer";
 import about from "./aboutReducer";
+import currentPage from "./currentPageReducer";
 
 const allReducers = combineReducers({
   bio,
@@ -12,7 +13,8 @@ const allReducers = combineReducers({
   albumCover,
   blogContent,
   contact,
-  about
+  about,
+  currentPage
 });
 
 export default allReducers;

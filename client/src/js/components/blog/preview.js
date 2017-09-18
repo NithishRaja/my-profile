@@ -13,7 +13,7 @@ export default class Preview extends Component{
                         <div className="panel-body">
                           {this.props.firstPara}
                         </div>
-                        <div classNamee="panel-footer">
+                        <div className="panel-footer">
                           <Link className="btn btn-default" to={"/blog/"+this.props.id} >Read article</Link>
                         </div>
                       </div>;

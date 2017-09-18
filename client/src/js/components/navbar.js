@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
+import Rx from "rxjs/Rx";
+
 export default class Navbar extends Component{
 
   constructor(props){
@@ -12,8 +14,8 @@ export default class Navbar extends Component{
                           </div>
                           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul className="nav navbar-nav navbar-right">
-                              <li><Link to="/about">About</Link></li>
-                              <li><Link to="/contact">Contact</Link></li>
+                              <li><Link id="about" to="/about">About</Link></li>
+                              <li><Link id="contact" to="/contact">Contact</Link></li>
                             </ul>
                           </div>
                         </div>
@@ -28,6 +30,26 @@ export default class Navbar extends Component{
     return (
       this._componentLayoutJSX
     );
+
+  }
+
+  componentDidMount(){
+
+    Rx.Observable.fromEvent(document.querySelector("#about"), "click")
+      .subscribe({
+        next: (event) => {
+          event.preventDefault();
+          this.props.updateCurrentPage(document.querySelector("#about").innerHTML);
+        }
+      });
+
+    Rx.Observable.fromEvent(document.querySelector("#about"), "click")
+      .subscribe({
+        next: (event) => {
+          event.preventDefault();
+          this.props.updateCurrentPage(document.querySelector("#about").innerHTML);
+        }
+      });
 
   }
 

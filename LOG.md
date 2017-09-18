@@ -100,4 +100,19 @@
 * **started at 2122 on 17-09-2017**
 * start to use redux to refactor **about** and **contact** components at 2123
 * finished refactoring **contact** component using redux at 2151
-* 
+* finished refactoring **about** component using redux at 2207
+* **ended at 2207 on 17-09-2017**
+
+* **started at 1507 on 18-09-2017**
+* removed link to about and contact pages from **navbar** component at 1510
+* start to write actions for buttons at 1511
+* added a click listener to buttons in **links** component at 1516
+* button listener works only for home link
+* wrote separate button listeners for all links at 1529
+* works as expected at 1530
+* start writing reducer to track current page at 1531
+* finished writing reducer at 1545
+* wrote container for **navbar** component at 1550
+* finished action listeners for buttons in **navbar** component at 1554
+* app works as expected at 1555
+* **ended at 1555 on 18-09-2017**
