@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
+import Rx from "rxjs/Rx";
 
 export default class Preview extends Component{
 
@@ -14,7 +15,7 @@ export default class Preview extends Component{
                           {this.props.firstPara}
                         </div>
                         <div className="panel-footer">
-                          <Link className="btn btn-default" to={"/blog/"+this.props.id} >Read article</Link>
+                          <Link id={`read-article-${this.props.id}`} className="btn btn-default" to={"/blog/"+this.props.id} >Read article</Link>
                         </div>
                       </div>;
 
@@ -26,6 +27,17 @@ export default class Preview extends Component{
     return(
       this._componentLayoutJSX
     );
+
+  }
+
+  componentDidMount(){
+
+    Rx.Observable.fromEvent(document.querySelector(`#read-article-${this.props.id}`), "click")
+      .subscribe({
+        next: (event) => {
+          this.props.updateSelectedArticle(this.props.id);
+        }
+      });
 
   }
 

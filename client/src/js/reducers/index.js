@@ -6,6 +6,7 @@ import blogContent from "./blogContentReducer";
 import contact from "./contactReducer";
 import about from "./aboutReducer";
 import currentPage from "./currentPageReducer";
+import selectedArticle from "./selectedArticleReducer";
 
 const allReducers = combineReducers({
   bio,
@@ -14,7 +15,8 @@ const allReducers = combineReducers({
   blogContent,
   contact,
   about,
-  currentPage
+  currentPage,
+  selectedArticle
 });
 
 export default allReducers;

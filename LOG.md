@@ -120,4 +120,33 @@
 * **started at 1737 on 18-09-2017**
 * made TODO.md file at 1759
 * start making **article** component at 1801
+* wrote boilerplate for **article** component at 1805
+* **article** component works as expected at 1805
+* cannot pass article info as props to **article** component
+* can save selected article in state and let **article** component access it
+* this way sending AJAX request is avoided
+* component is rendered faster
+* but all article info must be obtained at beginning which makes startup slow
+* can save selected article id in state and let **article** component send AJAX request to fetch info
+* this way app startup is faster
+* data usage is optimized
+* component must have alert to notify user that data is being received
+* component must have alert to notify user there was an error with AJAX request
+* choosing to implement second option
+* added action listener to Read Article button at 1820
+* **ended at 1823 on 18-09-2017**
+
+* **started at 1848 on 19-09-2017**
+* finished updateSelectedArticle action at 1851
+* started selectedArticleReducer at 1903
+* finished selectedArticleReducer at 1913
+* bug fixes need for selectedArticleReducer
+* **ended at 1913 on 19-09-2017**
+
+* **started at 1717 on 20-09-2017**
+* made separate container for **article** component at 1720
+* **article** component is separated from **blog** component to pass selectedArticle as prop
+* wrote boilerplate JSX for **article** component at 1737
+* **article** component works as expected
+* start make Link in **gallery** component to point to album at 1741
 * 

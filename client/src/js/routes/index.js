@@ -9,6 +9,7 @@ import Gallery from "./../containers/galleryContainer";
 import Blog from "./../containers/blogContainer";
 import Contact from "./../containers/contactContainer";
 import About from "./../containers/aboutContainer";
+import Article from "./../containers/articleContainer";
 
 const _routesJSX = <div>
                     {navbarRoutes}
@@ -17,7 +18,8 @@ const _routesJSX = <div>
                     <Switch>
                       <Route path="/"  exact component={Home} />
                       <Route path="/gallery"  exact component={Gallery} />
-                      <Route path="/blog" exact component={Blog} />
+                      <Route path="/blog/:id" exact component={Article} />
+                      <Route path="/blog" component={Blog} />
                       <Route path="/contact" exact component={Contact} />
                       <Route path="/about" exact component={About} />
                       <Route path="*" component={NotFound} />
