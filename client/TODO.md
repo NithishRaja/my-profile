@@ -1,8 +1,6 @@
 # TODO
 
-* make component to display single blog
-* make component to display single album
-* make component to display single image
+* use `redux-observable` for async data retrieval
 * provide comments
 * write tests
 * update README.md

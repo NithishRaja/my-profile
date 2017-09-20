@@ -154,4 +154,6 @@
 * wrote selectedAlbumReducer and updateSelectedAlbum at 1814
 * finished **album** component at 1822
 * app works as expected
-* 
+* refactored **album** component at 1837
+* app works as expected
+* **ended at 1838 on 20-09-2017**
