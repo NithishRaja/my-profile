@@ -7,6 +7,7 @@ import contact from "./contactReducer";
 import about from "./aboutReducer";
 import currentPage from "./currentPageReducer";
 import selectedArticle from "./selectedArticleReducer";
+import selectedAlbum from "./selectedAlbumReducer";
 
 const allReducers = combineReducers({
   bio,
@@ -16,7 +17,8 @@ const allReducers = combineReducers({
   contact,
   about,
   currentPage,
-  selectedArticle
+  selectedArticle,
+  selectedAlbum
 });
 
 export default allReducers;

@@ -10,6 +10,7 @@ import Blog from "./../containers/blogContainer";
 import Contact from "./../containers/contactContainer";
 import About from "./../containers/aboutContainer";
 import Article from "./../containers/articleContainer";
+import Album from "./../containers/albumContainer";
 
 const _routesJSX = <div>
                     {navbarRoutes}
@@ -17,6 +18,7 @@ const _routesJSX = <div>
                     {linkRoutes}
                     <Switch>
                       <Route path="/"  exact component={Home} />
+                      <Route path="/gallery/:id" exact component={Album} />
                       <Route path="/gallery"  exact component={Gallery} />
                       <Route path="/blog/:id" exact component={Article} />
                       <Route path="/blog" component={Blog} />

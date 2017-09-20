@@ -148,5 +148,10 @@
 * **article** component is separated from **blog** component to pass selectedArticle as prop
 * wrote boilerplate JSX for **article** component at 1737
 * **article** component works as expected
-* start make Link in **gallery** component to point to album at 1741
+* start adding Link in **gallery** component to point to album at 1741
+* moved Link from **gallery** component to **albumCover** component at 1754
+* start writing **album** component at 1759
+* wrote selectedAlbumReducer and updateSelectedAlbum at 1814
+* finished **album** component at 1822
+* app works as expected
 * 

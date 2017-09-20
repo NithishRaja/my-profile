@@ -10,7 +10,10 @@ export default class Gallery extends Component{
     this._componentLayoutJSX = <div>
                                 <FeaturedImage img={this.props.featuredImage} alt={"image"} />
                                 <div className="well">
-                                  {this.props.albumCover.map((link, index) => <AlbumCover key={index} cover={link} alt={"image"} />)}
+                                  {this.props.albumCover.map((link, index) =>
+                                    <AlbumCover
+                                    updateSelectedAlbum={this.props.updateSelectedAlbum}
+                                    key={index} id={index} cover={link} alt={"image"} />)}
                                 </div>
                               </div>;
 
