@@ -77,7 +77,7 @@
 * **ended at 1218 on 14-09-2017**
 
 * **started at 1651 on 16-09-2017**
-* start implement redux for **home** component at 1652
+* start implement `redux` for **home** component at 1652
 * wrote container for **home** component at 1657
 * added reducer to carry bio info at 1702
 * start writing container for **gallery** component at 1705
@@ -98,9 +98,9 @@
 * **ended at 1859 on 16-09-2017**
 
 * **started at 2122 on 17-09-2017**
-* start to use redux to refactor **about** and **contact** components at 2123
-* finished refactoring **contact** component using redux at 2151
-* finished refactoring **about** component using redux at 2207
+* start to use `redux` to refactor **about** and **contact** components at 2123
+* finished refactoring **contact** component using `redux` at 2151
+* finished refactoring **about** component using `redux` at 2207
 * **ended at 2207 on 17-09-2017**
 
 * **started at 1507 on 18-09-2017**
@@ -157,3 +157,17 @@
 * refactored **album** component at 1837
 * app works as expected
 * **ended at 1838 on 20-09-2017**
+
+* **started at 1924 on 21-09-2017**
+* use `rxjs` for async data retrieval
+* start writing boilerplate for updateCurrentPageEpic at 1929
+* decided to remove updateCurrentPageEpic at 1934
+* let currentPageReducer be synchronous
+* start writing boilerplate for updateSelectedAlbumEpic at 1935
+* updateSelectedAlbumEpic completed at 1942
+* start writing boilerplate for updateSelectedArticleEpic at 1943
+* console error thrown `Cannot read property 'topic' of null`
+* selectedArticleReducer doesn't get updated
+* error resolved at 2004
+* error caused due to not including epic inside combineEpics
+* **ended at 2006 on 21-09-2017**

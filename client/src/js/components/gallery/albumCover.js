@@ -33,7 +33,7 @@ export default class AlbumCover extends Component{
     Rx.Observable.fromEvent(document.querySelector(`#view-album${this.props.id}`), "click")
       .subscribe({
         next: (event) => {
-          this.props.updateSelectedAlbum(this.props.id);
+          this.props.startSelectedAlbumUpdate(this.props.id);
         }
       });
 

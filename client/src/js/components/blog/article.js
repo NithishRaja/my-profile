@@ -17,9 +17,9 @@ export default class Article extends Component{
       }
     })}</article>;
 
-    this._article = <div className="container">{this._articleTitleJSX}{this._articleContentJSX}</div>;
+    this._articleJSX = <div className="container">{this._articleTitleJSX}{this._articleContentJSX}</div>;
 
-    this._componentLayoutJSX = this._article;
+    this._componentLayoutJSX = this._articleJSX;
 
   }
 

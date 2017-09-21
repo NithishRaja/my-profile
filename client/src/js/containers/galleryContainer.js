@@ -1,7 +1,7 @@
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import Gallery from "./../components/gallery";
-import updateSelectedAlbum from "./../actions/updateSelectedAlbum";
+import startSelectedAlbumUpdate from "./../actions/startSelectedAlbumUpdate";
 
 const mapStateToProps = (state) => {
   return {
@@ -11,7 +11,7 @@ const mapStateToProps = (state) => {
 };
 
 const matchDispatchToProps = (dispatch) => {
-  return bindActionCreators({updateSelectedAlbum}, dispatch);
+  return bindActionCreators({startSelectedAlbumUpdate}, dispatch);
 };
 
 export default connect(mapStateToProps, matchDispatchToProps)(Gallery);

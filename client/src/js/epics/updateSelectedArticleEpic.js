@@ -1,7 +1,7 @@
 
-export default function(state, action){
+export default function(action$){
 
-  return [
+  const blogContent = [
     {
       "id": 0,
       "topic": "Yes, Some Questions Are Better Than Others",
@@ -35,4 +35,9 @@ export default function(state, action){
       ]
     }
   ];
+
+  return action$.ofType("START_SELECTED_ARTICLE_UPDATE")
+    .map(action => {
+      return {type:"UPDATE_SELECTED_ARTICLE", payload:blogContent[action.payload]};
+    });
 }

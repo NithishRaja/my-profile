@@ -12,7 +12,7 @@ export default class Gallery extends Component{
                                 <div className="well">
                                   {this.props.albumCover.map((link, index) =>
                                     <AlbumCover
-                                    updateSelectedAlbum={this.props.updateSelectedAlbum}
+                                    startSelectedAlbumUpdate={this.props.startSelectedAlbumUpdate}
                                     key={index} id={index} cover={link} alt={"image"} />)}
                                 </div>
                               </div>;

@@ -1,6 +1,7 @@
 # TODO
 
-* use `redux-observable` for async data retrieval
+* refactor **link** component
+* use `redux-observable` for data retrieval via AJAX requests
 * provide comments
 * write tests
 * update README.md
