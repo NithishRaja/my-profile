@@ -171,3 +171,7 @@
 * error resolved at 2004
 * error caused due to not including epic inside combineEpics
 * **ended at 2006 on 21-09-2017**
+
+* **started at 0911 on 22-09-2017**
+* refactored **links** component to highlight active tab at 1913
+* 

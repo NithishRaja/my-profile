@@ -7,10 +7,11 @@ export default class Links extends Component{
   constructor(props){
     super(props);
 
+
     this._linkJSX = <ul className="nav nav-tabs">
-                      <li className="nav-item" role="presentation"><Link id="home" className={"nav-link"} to="/">Home</Link></li>
-                      <li className="nav-item" role="presentation"><Link id="blog" className={"nav-link"} to="/blog">Blog</Link></li>
-                      <li className="nav-item" role="presentation"><Link id="gallery" className={"nav-link"} to="/gallery">Gallery</Link></li>
+                      <li className={this.props.currentPage==="Home"?`nav-item active`:`nav-item`} role="presentation"><Link id="home" className="nav-link" to="/">Home</Link></li>
+                      <li className={this.props.currentPage==="Blog"?`nav-item active`:`nav-item`} role="presentation"><Link id="blog" className="nav-link" to="/blog">Blog</Link></li>
+                      <li className={this.props.currentPage==="Gallery"?`nav-item active`:`nav-item`} role="presentation"><Link id="gallery" className="nav-link" to="/gallery">Gallery</Link></li>
                     </ul>;
 
     this._componentLayoutJSX = this._linkJSX;
@@ -18,6 +19,14 @@ export default class Links extends Component{
   }
 
   render(){
+
+    this._linkJSX = <ul className="nav nav-tabs">
+                      <li className={this.props.currentPage==="Home"?`nav-item active`:`nav-item`} role="presentation"><Link id="home" className="nav-link" to="/">Home</Link></li>
+                      <li className={this.props.currentPage==="Blog"?`nav-item active`:`nav-item`} role="presentation"><Link id="blog" className="nav-link" to="/blog">Blog</Link></li>
+                      <li className={this.props.currentPage==="Gallery"?`nav-item active`:`nav-item`} role="presentation"><Link id="gallery" className="nav-link" to="/gallery">Gallery</Link></li>
+                    </ul>;
+
+    this._componentLayoutJSX = this._linkJSX;
 
     return (
       this._componentLayoutJSX
