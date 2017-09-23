@@ -1,44 +1,10 @@
 
-export default function(state, action){
-  return {
-    "name": {
-      "first": "nithish",
-      "middle": null,
-      "last": "raja"
-    },
-    "age": 20,
-    "sex": "male",
-    "birth": {
-      "year": 1998,
-      "month": "may",
-      "date": 5,
-      "day": "tuesday"
-    },
-    "languages": [
-      "tamil",
-      "english",
-      "hindi"
-    ]
-  };
-}
+export default function(state=null, action){
 
-// return {
-//   "name": {
-//     "first": "nithish",
-//     "middle": null,
-//     "last": "raja"
-//   },
-//   "age": 20,
-//   "sex": "male",
-//   "birth": {
-//     "year": 1998,
-//     "month": "may",
-//     "date": 5,
-//     "day": "tuesday"
-//   },
-//   "languages": [
-//     "tamil",
-//     "english",
-//     "hindi"
-//   ]
-// };
+  switch(action.type){
+    case "UPDATE_ABOUT":
+      return action.payload;
+    default:
+      return state;
+  }
+}

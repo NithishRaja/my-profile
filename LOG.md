@@ -187,4 +187,5 @@
 * wrote JSX for fetching blogContent at 1443
 * refactored **blog** component at 1454
 * refactored **contact** component at 1505
+* refactored **about** component at 1514
 * 
