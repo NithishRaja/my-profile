@@ -4,13 +4,15 @@ import updateSelectedArticleEpic from "./updateSelectedArticleEpic";
 import updateAlbumCoverEpic from "./updateAlbumCoverEpic";
 import updateFeaturedImageEpic from "./updateFeaturedImageEpic";
 import updateBlogContentEpic from "./updateBlogContentEpic";
+import updateContactEpic from "./updateContactEpic";
 
 const allEpics = combineEpics(
   updateSelectedAlbumEpic,
   updateSelectedArticleEpic,
   updateAlbumCoverEpic,
   updateFeaturedImageEpic,
-  updateBlogContentEpic
+  updateBlogContentEpic,
+  updateContactEpic
 );
 
 const epicMiddleware = createEpicMiddleware(

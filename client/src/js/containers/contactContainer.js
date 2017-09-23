@@ -1,6 +1,7 @@
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import Contact from "./../components/contact";
+import startContactUpdate from "./../actions/startContactUpdate";
 
 const mapStateToProps = (state) => {
   return {
@@ -9,7 +10,7 @@ const mapStateToProps = (state) => {
 };
 
 const matchDispatchToProps = (dispatch) => {
-  return bindActionCreators({}, dispatch);
+  return bindActionCreators({startContactUpdate}, dispatch);
 }
 
 export default connect(mapStateToProps, matchDispatchToProps)(Contact);

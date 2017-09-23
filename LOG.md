@@ -186,4 +186,5 @@
 * refactored **gallery** component at 1438
 * wrote JSX for fetching blogContent at 1443
 * refactored **blog** component at 1454
+* refactored **contact** component at 1505
 * 
