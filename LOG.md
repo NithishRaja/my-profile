@@ -181,4 +181,9 @@
 * created new folder api inside public at 1346
 * added `rxjs` functionality to gallery component at 1413
 * get featuredImage via redux-observable
+* epic created for featuredImage at 1420
+* worte JSX for fetching featuredImage and fetching albumCovers at 1430
+* refactored **gallery** component at 1438
+* wrote JSX for fetching blogContent at 1443
+* refactored **blog** component at 1454
 * 
