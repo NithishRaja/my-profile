@@ -188,4 +188,5 @@
 * refactored **blog** component at 1454
 * refactored **contact** component at 1505
 * refactored **about** component at 1514
+* refactored **home** component at 1523
 * 

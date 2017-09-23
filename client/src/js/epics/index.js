@@ -6,6 +6,7 @@ import updateFeaturedImageEpic from "./updateFeaturedImageEpic";
 import updateBlogContentEpic from "./updateBlogContentEpic";
 import updateContactEpic from "./updateContactEpic";
 import updateAboutEpic from "./updateAboutEpic";
+import updateBioEpic from "./updateBioEpic";
 
 const allEpics = combineEpics(
   updateSelectedAlbumEpic,
@@ -14,7 +15,8 @@ const allEpics = combineEpics(
   updateFeaturedImageEpic,
   updateBlogContentEpic,
   updateContactEpic,
-  updateAboutEpic
+  updateAboutEpic,
+  updateBioEpic
 );
 
 const epicMiddleware = createEpicMiddleware(
