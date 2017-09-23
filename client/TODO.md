@@ -1,7 +1,6 @@
 # TODO
 
-* refactor **link** component
-* write waitnig for AJAX request to finish alerts for all pages
+* write "waiting for AJAX request to finish alerts" for all pages
 * use `redux-observable` for data retrieval via AJAX requests
 * provide comments
 * write tests

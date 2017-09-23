@@ -174,4 +174,10 @@
 
 * **started at 0911 on 22-09-2017**
 * refactored **links** component to highlight active tab at 1913
+* **ended at 0923 on 22-09-2017**
+
+* **started at 1343 on 23-09-2017**
+* add async calls to `rxjs` epics
+* created new folder api inside public at 1346
+* added `rxjs` functionality to gallery component at 1413
 * 
