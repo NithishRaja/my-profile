@@ -180,4 +180,5 @@
 * add async calls to `rxjs` epics
 * created new folder api inside public at 1346
 * added `rxjs` functionality to gallery component at 1413
+* get featuredImage via redux-observable
 * 

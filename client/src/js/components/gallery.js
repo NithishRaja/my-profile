@@ -7,47 +7,48 @@ export default class Gallery extends Component{
   constructor(props){
     super(props);
 
-    if(this.props.albumCover===null){
-      console.log("component");
-      console.log(this.props);
-      this.props.startAlbumCoverUpdate("constructor");
-    }
+    this._fetchingFeaturedImageAlertJSX = <div className="alert alert-info" role="alert">fetching featured image...</div>;
 
-    if(this.props.albumCover===null){
-      this._componentLayoutJSX = <h1>one for all</h1>;
-    }else{
-      this._componentLayoutJSX = <div>
-                                  <FeaturedImage img={this.props.featuredImage} alt={"image"} />
-                                  <div className="well">
-                                    {this.props.albumCover.map((link, index) =>
-                                      <AlbumCover
-                                      startSelectedAlbumUpdate={this.props.startSelectedAlbumUpdate}
-                                      key={index} id={index} cover={link} alt={"image"} />)}
-                                  </div>
-                                </div>;
-    }
+    this._fetchingAlbumCoversAlertJSX = <div className="alert alert-info" role="alert">fetching album covers...</div>;
+
+    this._componentLayoutJSX = <div>{this._fetchingFeaturedImageAlertJSX}{this._fetchingAlbumCoversAlertJSX}</div>;
 
   }
 
   componentWillMount(){
     if(this.props.albumCover===null){
-      this.props.startAlbumCoverUpdate("componentWillMount");
+      this.props.startAlbumCoverUpdate();
     }
+
+    if(this.props.featuredImage===null){
+      this.props.startFeaturedImageUpdate();
+    }
+
   }
 
   render(){
 
-    if(this.props.albumCover===null){
-      this._componentLayoutJSX = <h1>one for all</h1>;
-    }else{
+    if(this.props.featuredImage!==null){
+      this._featuredImageJSX = <FeaturedImage img={this.props.featuredImage} alt={"image"} />;
+    }
+
+    if(this.props.albumCover!==null){
+      this._albumCoverJSX = <div className="well">
+        {this.props.albumCover.map((link, index) =>
+          <AlbumCover
+          startSelectedAlbumUpdate={this.props.startSelectedAlbumUpdate}
+          key={index} id={index} cover={link} alt={"image"} />)}
+      </div>;
+    }
+
+    if(this.props.albumCover===null&&this.props.featuredImage!==null){
+      this._componentLayoutJSX = <div>{this._featuredImageJSX}{this._fetchingAlbumCoversAlertJSX}</div>;
+    }else if(this.props.featuredImage===null&&this.props.albumCover!==null){
+      this._componentLayoutJSX = <div>{this._fetchingFeaturedImageAlertJSX}{this._albumCoverJSX}</div>;
+    }else if(this.props.featuredImage!==null&&this.props.albumCover!==null){
       this._componentLayoutJSX = <div>
-                                  <FeaturedImage img={this.props.featuredImage} alt={"image"} />
-                                  <div className="well">
-                                    {this.props.albumCover.map((link, index) =>
-                                      <AlbumCover
-                                      startSelectedAlbumUpdate={this.props.startSelectedAlbumUpdate}
-                                      key={index} id={index} cover={link} alt={"image"} />)}
-                                  </div>
+                                  {this._featuredImageJSX}
+                                  {this._albumCoverJSX}
                                 </div>;
     }
 

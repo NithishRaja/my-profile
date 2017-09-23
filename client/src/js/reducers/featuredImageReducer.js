@@ -1,5 +1,10 @@
 
-export default function(state, action){
+export default function(state=null, action){
 
-  return "https://spark.adobe.com/images/landing/examples/hiking-fb-cover.jpg";
+  switch(action.type){
+    case "UPDATE_FEATURED_IMAGE":
+      return action.payload;
+    default:
+      return state;
+  }
 }

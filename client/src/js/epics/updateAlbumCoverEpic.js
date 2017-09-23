@@ -9,8 +9,6 @@ export default function(action$){
 
   return action$.ofType("START_ALBUM_COVER_UPDATE")
     .map(action => {
-      console.log("epic");
-      console.log(action);
       return {type:"UPDATE_ALBUM_COVER", payload: albumCoverInfo};
     });
 }
