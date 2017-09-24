@@ -36,7 +36,7 @@ export default class Gallery extends Component{
       this._albumCoverJSX = <div className="well">
         {this.props.albumCover.map((link, index) =>
           <AlbumCover
-          startSelectedAlbumUpdate={this.props.startSelectedAlbumUpdate}
+          updateSelectedAlbumId={this.props.updateSelectedAlbumId}
           key={index} id={index} cover={link} alt={"image"} />)}
       </div>;
     }

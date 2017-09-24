@@ -189,4 +189,18 @@
 * refactored **contact** component at 1505
 * refactored **about** component at 1514
 * refactored **home** component at 1523
-* 
+* **ended at 1528 on 23-09-2017**
+
+* **started at 1328 on 24-09-2017**
+* used rxjs to fetch aboutInfo via ajax request at 1328
+* used rxjs to fetch albumCover via ajax request at 1330
+* used rxjs to fetch bio via ajax request at 1333
+* used rxjs to fetch blogContent via ajax request at 1336
+* used rxjs to fetch contactInfo via ajax request at 1339
+* used rxjs to fetch featuredImage via ajax request at 1341
+* used rxjs to fetch selectedAlbum via ajax request at 1343
+* console error thrown `Cannot read property 'title' of null` at 1343
+* resloved error at 1430
+* used rxjs to fetch selectedAlbum via ajax request at 1448
+* app works as expected
+* **ended at 1450 on 24-09-2017**

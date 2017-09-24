@@ -35,7 +35,7 @@ export default class Preview extends Component{
     Rx.Observable.fromEvent(document.querySelector(`#read-article-${this.props.id}`), "click")
       .subscribe({
         next: (event) => {
-          this.props.startSelectedArticleUpdate(this.props.id);
+          this.props.updateSelectedArticleId(this.props.id);
         }
       });
 

@@ -1,10 +1,11 @@
+import Rx from "rxjs/Rx";
 
 export default function(action$){
 
-  const featuredImage = "https://spark.adobe.com/images/landing/examples/hiking-fb-cover.jpg";
-
   return action$.ofType("START_FEATURED_IMAGE_UPDATE")
-    .map(action => {
-      return {type:"UPDATE_FEATURED_IMAGE", payload:featuredImage};
+    .mergeMap(action => Rx.Observable.ajax({url:"api/featuredImage.json", responseType:"json"}))
+    .pluck("response")
+    .map(response => {
+      return {type:"UPDATE_FEATURED_IMAGE", payload:response};
     });
 }

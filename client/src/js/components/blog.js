@@ -23,7 +23,7 @@ export default class Blog extends Component{
     if(this.props.blogContent!==null){
       this._blogContentJSX = this.props.blogContent.map((article, index) =>
                                 <Preview key={index} id={article.id}
-                                startSelectedArticleUpdate={this.props.startSelectedArticleUpdate}
+                                updateSelectedArticleId={this.props.updateSelectedArticleId}
                                 topic={article.topic} firstPara={article.content[0].paragraph} />);
 
       if(this.props.blogContent!==null){

@@ -1,8 +1,8 @@
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import Blog from "./../components/blog";
-import startSelectedArticleUpdate from "./../actions/startSelectedArticleUpdate";
 import startBlogContentUpdate from "./../actions/startBlogContentUpdate";
+import updateSelectedArticleId from "./../actions/updateSelectedArticleId";
 
 const mapStateToProps = (state) => {
   return {
@@ -11,7 +11,7 @@ const mapStateToProps = (state) => {
 };
 
 const matchDispatchToProps = (dispatch) => {
-  return bindActionCreators({startSelectedArticleUpdate, startBlogContentUpdate}, dispatch);
+  return bindActionCreators({updateSelectedArticleId, startBlogContentUpdate}, dispatch);
 };
 
 export default connect(mapStateToProps, matchDispatchToProps)(Blog);
