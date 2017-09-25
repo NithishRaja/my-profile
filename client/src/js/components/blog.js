@@ -6,14 +6,17 @@ export default class Blog extends Component{
   constructor(props){
     super(props);
 
+    // initializing variable to contain JSX for alert
     this._fetchingBlogContentJSX = <div className="alert alert-info" role="alert">fetching blogs...</div>;
 
+    // initializing variable to contain layout for entire component
     this._componentLayoutJSX = <div>{this._fetchingBlogContentJSX}</ div>;
 
   }
 
   componentWillMount(){
     if(this.props.blogContent===null){
+      // update blog content whne it is not passes as props
       this.props.startBlogContentUpdate();
     }
   }
@@ -21,6 +24,7 @@ export default class Blog extends Component{
   render(){
 
     if(this.props.blogContent!==null){
+      // whnn blog content is passed as props, initialize JSX to display blog content
       this._blogContentJSX = this.props.blogContent.map((article, index) =>
                                 <Preview key={index} id={article.id}
                                 updateSelectedArticleId={this.props.updateSelectedArticleId}

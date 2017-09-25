@@ -7,20 +7,25 @@ export default class Gallery extends Component{
   constructor(props){
     super(props);
 
+    // initializing variable to JSX for alert
     this._fetchingFeaturedImageAlertJSX = <div className="alert alert-info" role="alert">fetching featured image...</div>;
 
+    // initializing variable to JSX for alert
     this._fetchingAlbumCoversAlertJSX = <div className="alert alert-info" role="alert">fetching album covers...</div>;
 
+    // initializing variable to contain layout for entire component
     this._componentLayoutJSX = <div>{this._fetchingFeaturedImageAlertJSX}{this._fetchingAlbumCoversAlertJSX}</div>;
 
   }
 
   componentWillMount(){
     if(this.props.albumCover===null){
+      // update album cover if it is not passed as props
       this.props.startAlbumCoverUpdate();
     }
 
     if(this.props.featuredImage===null){
+      // update featured image if it is not passed as props
       this.props.startFeaturedImageUpdate();
     }
 
@@ -29,10 +34,12 @@ export default class Gallery extends Component{
   render(){
 
     if(this.props.featuredImage!==null){
+      // if featured image is sent, initialize JSX to display featured image
       this._featuredImageJSX = <FeaturedImage img={this.props.featuredImage} alt={"image"} />;
     }
 
     if(this.props.albumCover!==null){
+      // if album cover is sent, initialize JSX to display album cover
       this._albumCoverJSX = <div className="well">
         {this.props.albumCover.map((link, index) =>
           <AlbumCover

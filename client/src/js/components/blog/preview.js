@@ -7,6 +7,7 @@ export default class Preview extends Component{
   constructor(props){
     super(props);
 
+    // initializing variable to JSX for preview
     this._previewJSX = <div className="panel panel-default">
                         <div className="panel-heading">
                           {this.props.topic}
@@ -19,6 +20,7 @@ export default class Preview extends Component{
                         </div>
                       </div>;
 
+    // initializing variable to contain layout for entire component
     this._componentLayoutJSX = this._previewJSX;
   }
 
@@ -32,6 +34,7 @@ export default class Preview extends Component{
 
   componentDidMount(){
 
+    // listener for "read-article" button clicks
     Rx.Observable.fromEvent(document.querySelector(`#read-article-${this.props.id}`), "click")
       .subscribe({
         next: (event) => {

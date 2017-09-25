@@ -7,6 +7,7 @@ export default class AlbumCover extends Component{
   constructor(props){
     super(props);
 
+    // initializing variable to contain JSX for album cover
     this._albumCoversJSX = <div className="panel">
                             <div className="panel-body">
                               <img className="card-img-top" width="200px" height="auto" src={this.props.cover} alt={this.props.alt} />
@@ -16,6 +17,7 @@ export default class AlbumCover extends Component{
                             </div>
                           </div>;
 
+    // initializing variable to contain layout for entire component
     this._componentLayoutJSX = this._albumCoversJSX;
 
   }
@@ -30,13 +32,13 @@ export default class AlbumCover extends Component{
 
   componentDidMount(){
 
+    // listener for "view album" button clicks
     Rx.Observable.fromEvent(document.querySelector(`#album-${this.props.id}`), "click")
       .subscribe({
         next: () => {
           this.props.updateSelectedAlbumId(this.props.id);
         }
       });
-
   }
 
 }

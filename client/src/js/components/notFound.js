@@ -5,6 +5,7 @@ export default class NotFound extends Component{
 
   render(){
 
+    // JSX for not found messages
     return (
       <div className="jumbotron">
         <h1 className="display-3">{"404. Not found!"}</h1>

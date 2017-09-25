@@ -7,6 +7,7 @@ export default class Navbar extends Component{
   constructor(props){
     super(props);
 
+    // initializing variable to JSX for navbar
     this._navbarJSX = <nav className="navbar navbar-inverse navbar-static-top">
                         <div className="container">
                           <div className="navbar-header">
@@ -21,6 +22,7 @@ export default class Navbar extends Component{
                         </div>
                       </nav>;
 
+    // initializing variable to contain layout for entire component
     this._componentLayoutJSX = this._navbarJSX;
 
   }
@@ -35,6 +37,7 @@ export default class Navbar extends Component{
 
   componentDidMount(){
 
+    // listener for "about" button clicks
     Rx.Observable.fromEvent(document.querySelector("#about"), "click")
       .subscribe({
         next: (event) => {
@@ -42,6 +45,7 @@ export default class Navbar extends Component{
         }
       });
 
+    // listener for "contact" button clicks
     Rx.Observable.fromEvent(document.querySelector("#contact"), "click")
       .subscribe({
         next: (event) => {

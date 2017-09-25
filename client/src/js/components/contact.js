@@ -5,14 +5,17 @@ export default class Contact extends Component{
   constructor(props){
     super(props);
 
+    // initializing variable to contain JSX for alert
     this._fetchingContactJSX = <div className="alert alert-info" role="alert">fetching contact info...</div>;
 
+    // initializing variable to contain layout for entire component
     this._componentLayoutJSX = <div>{this._fetchingContactJSX}</div>;
-    
+
   }
 
   componentWillMount(){
     if(this.props.contact===null){
+      // update contact when it is not passed as props
       this.props.startContactUpdate();
     }
   }
@@ -20,6 +23,7 @@ export default class Contact extends Component{
   render(){
 
     if(this.props.contact!==null){
+      // when contact is passed as props, initialize JSX to display contact
       this._sendEmailJSX = <div className="alert alert-info"><strong>{"Email:"}</strong>{this.props.contact.email.map(email => {return ` ${email}`})}</div>;
 
       this._mobileNumberJSX = <div className="alert alert-info"><strong>{"Mobile: "}</strong>{this.props.contact.mobile.map(mobile => mobile)}</div>;
