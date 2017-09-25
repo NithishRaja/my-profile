@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "mocha ./server/tests/index.js ./server/index.js -w",
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build && npm prune --production"
   },
   "dependencies": {

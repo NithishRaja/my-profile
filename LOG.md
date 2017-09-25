@@ -204,3 +204,19 @@
 * used rxjs to fetch selectedAlbum via ajax request at 1448
 * app works as expected
 * **ended at 1450 on 24-09-2017**
+
+* **started at 1424 on 25-09-2017**
+* start writing routes for api at 1424
+* finished writing routes for api at 1436
+* starting to move functionality from routes into middleware at 1437
+* finished moving functionality from routes into middleware at 1444
+* moved middleware concerning api into a separate file at 1446
+* api routes no longer work at 1446
+* fixed error at 1450
+* server works as expected
+* started to refactor api middleware at 1453
+* moving api middleware into separate folder and moving each middleware into separate file
+* finished moving middleware at 1459
+* made the frontend render for "/" route at 1507
+* made react app get json from server instead of static files at 1511
+* **ended at 1512 on 25-09-2017**
