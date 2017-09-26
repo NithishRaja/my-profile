@@ -225,4 +225,4 @@
 * made database directory at 1837
 * installed `redis`, `connect-redis`,  `express-session` at 1839
 * added connection to redis database for session storage at 1845
-* 
+* **ended at 1847 on 26-09-2017**
