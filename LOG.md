@@ -220,3 +220,9 @@
 * made the frontend render for "/" route at 1507
 * made react app get json from server instead of static files at 1511
 * **ended at 1512 on 25-09-2017**
+
+* **started at 1836 on 26-09-2017**
+* made database directory at 1837
+* installed `redis`, `connect-redis`,  `express-session` at 1839
+* added connection to redis database for session storage at 1845
+* 
