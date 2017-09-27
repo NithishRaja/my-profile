@@ -6,7 +6,8 @@ var cookieParser = require("cookie-parser");
 
 var configureViews = require("./views");
 var configureRoutes = require("./routes");
-var configureSessionDatabase = require("./database/redisConnection");
+var configureMainDatabase = require("./database/mongoDB");
+var configureSessionDatabase = require("./database/redis");
 
 const app = express();
 
@@ -14,6 +15,8 @@ app.set("port", process.env.PORT || 5000);
 
 app.use(cookieParser("cookie secret"));
 app.use(session(configureSessionDatabase(session)));
+
+configureMainDatabase(app);
 
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());

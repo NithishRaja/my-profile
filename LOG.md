@@ -226,3 +226,8 @@
 * installed `redis`, `connect-redis`,  `express-session` at 1839
 * added connection to redis database for session storage at 1845
 * **ended at 1847 on 26-09-2017**
+
+* **started at 2001 on 27-09-2017**
+* renamed redisConnection.js into index.js and moved it into redis folder at 2002
+* made mongoDB directory for connection to mongoDB at 2003
+* 
