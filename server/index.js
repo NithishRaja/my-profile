@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyparser = require("body-parser");
 var session = require("express-session");
+var cookieParser = require("cookie-parser");
 
 var configureViews = require("./views");
 var configureRoutes = require("./routes");
@@ -11,6 +12,7 @@ const app = express();
 
 app.set("port", process.env.PORT || 5000);
 
+app.use(cookieParser("cookie secret"));
 app.use(session(configureSessionDatabase(session)));
 
 app.use(bodyparser.urlencoded({extended:true}));
