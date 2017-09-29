@@ -8,6 +8,7 @@ var configureViews = require("./views");
 var configureRoutes = require("./routes");
 var configureMainDatabase = require("./database/mongoDB");
 var configureSessionDatabase = require("./database/redis");
+var setDefaults = require("./database/mongoDB/setDefaults");
 
 const app = express();
 
@@ -17,6 +18,8 @@ app.use(cookieParser("cookie secret"));
 app.use(session(configureSessionDatabase(session)));
 
 configureMainDatabase(app);
+
+setDefaults();
 
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());

@@ -230,4 +230,13 @@
 * **started at 2001 on 27-09-2017**
 * renamed redisConnection.js into index.js and moved it into redis folder at 2002
 * made mongoDB directory for connection to mongoDB at 2003
-* 
+* added connection to mongoDB at 2014
+* app works as expected at 2014
+* **ended at 2016 on 27-09-2017**
+
+* **started at 1511 on 29-09-2017**
+* created model and schema folder at 1514
+* bug in mongoose
+* throws deprecation warning `open() is deprecated in mongoose >= 4.11.0, use openUri()`
+* decided to connect manually to database instead of using mongoose at 1636
+* **ended at 1636 on 29-09-2017**
