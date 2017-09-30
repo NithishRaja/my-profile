@@ -1,4 +1,8 @@
+var mongo = require("mongodb");
 
 module.exports = function(req, res){
-  res.json("https://spark.adobe.com/images/landing/examples/hiking-fb-cover.jpg");
+  var collection = mongo.DB.collection("profile");
+  collection.findOne({}, {}, function(err, result){
+    res.json(result.featuredImage);
+  });
 };

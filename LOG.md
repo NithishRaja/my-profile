@@ -243,3 +243,9 @@
 
 * **started at 1308 on 30-09-2017**
 * removed mongoose code from mongoDB folder and deleted model folder at 1309
+* ran `npm install --save mongodb` at 1312
+* wrote code to connect to mongoDB at 1330
+* moved setDefaults function call from `server/index.js` into `server/database/mongoDB/index.js` at 1340
+* finished code for setDefaults at 1408
+* refactored about middleware to get data from database at 1420
+* refactored all middleware to get data from database at 1423
