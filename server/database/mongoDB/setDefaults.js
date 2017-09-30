@@ -137,6 +137,7 @@ module.exports = function(mongo){
     returnOriginal: false
   }
 
+  // if data doesn't exist update database
   aboutCollection.findOneAndUpdate(query, newProfileDocument, options, function(err, res){
     console.log("default values set");
   });

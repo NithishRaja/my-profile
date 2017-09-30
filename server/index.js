@@ -1,28 +1,35 @@
+// requiring vendor libraries
 var express = require('express');
 var path = require('path');
 var bodyparser = require("body-parser");
 var session = require("express-session");
 var cookieParser = require("cookie-parser");
 
+// requiring local functions and libraries
 var configureViews = require("./views");
 var configureRoutes = require("./routes");
 var configureMainDatabase = require("./database/mongoDB").connect;
 var configureSessionDatabase = require("./database/redis");
 
+// initialize express
 const app = express();
-
+// seting port value inside app singleton
 app.set("port", process.env.PORT || 5000);
 
+// setting up cookies and sessions
 app.use(cookieParser("cookie secret"));
 app.use(session(configureSessionDatabase(session)));
 
+// connection to mongodb
 configureMainDatabase(app);
 
+// using bodyparser to parse post requests
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
 
+// setting up views
 configureViews(app);
-
+// setting up routes
 configureRoutes(app);
 
 // Serve static files from the React app
