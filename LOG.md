@@ -240,3 +240,6 @@
 * throws deprecation warning `open() is deprecated in mongoose >= 4.11.0, use openUri()`
 * decided to connect manually to database instead of using mongoose at 1636
 * **ended at 1636 on 29-09-2017**
+
+* **started at 1308 on 30-09-2017**
+* removed mongoose code from mongoDB folder and deleted model folder at 1309
