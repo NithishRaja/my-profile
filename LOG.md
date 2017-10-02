@@ -249,3 +249,12 @@
 * finished code for setDefaults at 1408
 * refactored about middleware to get data from database at 1420
 * refactored all middleware to get data from database at 1423
+* added comments at 1436
+* **ended at 1438 on 30-09-2017**
+
+* **started at 0628 on 02-10-2017**
+* started writing tests for server routes at 0629
+* finished writing tests at 0646
+* start to update README.md at 0646
+* updated README.md inside **server** and **client** at 0659
+* **finished at 0659 on 02-10-2017**
