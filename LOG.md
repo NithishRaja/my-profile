@@ -258,3 +258,10 @@
 * start to update README.md at 0646
 * updated README.md inside **server** and **client** at 0659
 * **finished at 0659 on 02-10-2017**
+
+* **started at 1614 on 16-11-2017**
+* use `node-redis-session` instead of `express-session` at 1615
+* switch to client code
+* run `npm install` at 1615
+* finished installing at 1627
+* 
