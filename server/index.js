@@ -2,8 +2,8 @@
 var express = require('express');
 var path = require('path');
 var bodyparser = require("body-parser");
-var session = require("express-session");
 var cookieParser = require("cookie-parser");
+var redisSession = require("node-redis-session");
 
 // requiring local functions and libraries
 var configureViews = require("./views");
@@ -18,7 +18,7 @@ app.set("port", process.env.PORT || 5000);
 
 // setting up cookies and sessions
 app.use(cookieParser("cookie secret"));
-app.use(session(configureSessionDatabase(session)));
+app.use(redisSession());
 
 // connection to mongodb
 configureMainDatabase(app);
