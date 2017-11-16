@@ -1,0 +1,49 @@
+.card{
+  margin-top: 5%;
+}
+
+.card>p{
+  text-indent: 2%;
+  text-align: justify;
+  font-size: large;
+}
+
+.blog-container{
+  margin-top: 2%;
+}
+
+.blog-heading{
+  font-weight: bold;
+  font-size: large;
+}
+
+.gallery-panel{
+  margin-top: 2%;
+  padding: 0px;
+}
+
+.gallery-panel-footer{
+  background-color: #d9edf7;
+}
+
+.gallery-image{
+  height: 250px;
+  width: 100%;
+}
+
+.album-panel{
+  margin-top: 2%;
+}
+
+.album-image{
+  width: 100%;
+}
+
+.album-panel-heading{
+  font-weight: bold;
+  font-size: large;
+}
+
+.link-nav{
+  margin-top: 1%; 
+}

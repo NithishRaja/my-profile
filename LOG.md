@@ -277,4 +277,6 @@
 * refactor **albumCover** styles at 1751
 * refactored **album** to display images one at a time at 1926
 * added styles to **album** at 1932
-* 
+* included build file in `server/public` at 1951
+* works as expected
+* **ended at 1951 on 16-11-2017**
