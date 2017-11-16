@@ -7,7 +7,7 @@ export default class Blog extends Component{
     super(props);
 
     // initializing variable to contain JSX for alert
-    this._fetchingBlogContentJSX = <div className="alert alert-info" role="alert">fetching blogs...</div>;
+    this._fetchingBlogContentJSX = <div className="alert alert-info container" role="alert">fetching blogs...</div>;
 
     // initializing variable to contain layout for entire component
     this._componentLayoutJSX = <div>{this._fetchingBlogContentJSX}</ div>;
@@ -18,23 +18,27 @@ export default class Blog extends Component{
     if(this.props.blogContent===null){
       // update blog content whne it is not passes as props
       this.props.startBlogContentUpdate();
+    }else{
+      this._blogContentJSX = this.props.blogContent.map((article, index) =>
+                                <Preview key={index}
+                                 updateSelectedArticleId={this.props.updateSelectedArticleId}
+                                 article={article} />);
+      this._componentLayoutJSX = <div className="container blog-container">{this._blogContentJSX}</div>;
+    }
+  }
+
+  componentWillUpdate(newProps){
+    if(newProps.blogContent!==null){
+      // when blog content is passed as props, initialize JSX to display blog content
+      this._blogContentJSX = newProps.blogContent.map((article, index) =>
+                                <Preview key={index}
+                                 updateSelectedArticleId={newProps.updateSelectedArticleId}
+                                 article={article} />);
+      this._componentLayoutJSX = <div className="container blog-container">{this._blogContentJSX}</div>;
     }
   }
 
   render(){
-
-    if(this.props.blogContent!==null){
-      // whnn blog content is passed as props, initialize JSX to display blog content
-      this._blogContentJSX = this.props.blogContent.map((article, index) =>
-                                <Preview key={index} id={article.id}
-                                updateSelectedArticleId={this.props.updateSelectedArticleId}
-                                topic={article.topic} firstPara={article.content[0].paragraph} />);
-
-      if(this.props.blogContent!==null){
-        this._componentLayoutJSX = <div>{this._blogContentJSX}</div>;
-      }
-    }
-
     return(
       this._componentLayoutJSX
     );

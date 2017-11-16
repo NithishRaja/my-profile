@@ -8,15 +8,15 @@ export default class Preview extends Component{
     super(props);
 
     // initializing variable to JSX for preview
-    this._previewJSX = <div className="panel panel-default">
-                        <div className="panel-heading">
-                          {this.props.topic}
+    this._previewJSX = <div className="panel panel-info">
+                        <div className="panel-heading blog-heading">
+                          {this.props.article.topic}
                         </div>
                         <div className="panel-body">
-                          {this.props.firstPara}
+                          <p>{this.props.article.content[0].paragraph}</p>
                         </div>
                         <div className="panel-footer">
-                          <Link id={`read-article-${this.props.id}`} className="btn btn-default" to={"/blog/"+this.props.id} >Read article</Link>
+                          <Link id={`read-article-${this.props.article.id}`} className="btn btn-primary col-md-offset-10" to={"/blog/"+this.props.article.id} >Read article</Link>
                         </div>
                       </div>;
 
@@ -33,12 +33,11 @@ export default class Preview extends Component{
   }
 
   componentDidMount(){
-
     // listener for "read-article" button clicks
-    Rx.Observable.fromEvent(document.querySelector(`#read-article-${this.props.id}`), "click")
+    Rx.Observable.fromEvent(document.querySelector(`#read-article-${this.props.article.id}`), "click")
       .subscribe({
         next: (event) => {
-          this.props.updateSelectedArticleId(this.props.id);
+          this.props.updateSelectedArticleId(this.props.article.id);
         }
       });
 

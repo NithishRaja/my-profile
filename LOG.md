@@ -264,4 +264,17 @@
 * switch to client code
 * run `npm install` at 1615
 * finished installing at 1627
+* added styles to **bio** at 1636
+* added margin to **links** at 1643
+* refactor **links** using *componentWillUpdate* at 1644
+* added styles to **blog** at 1653
+* refactor **blog** using *componentWillUpdate* at 1653
+* refactor **preview** props at 1703
+* added styles to **gallery** at 1714
+* refactor **gallery** using *componentWillUpdate* at 1714
+* added styles to **albumCover** at 1736
+* removed **featuredImage** at 1745
+* refactor **albumCover** styles at 1751
+* refactored **album** to display images one at a time at 1926
+* added styles to **album** at 1932
 * 

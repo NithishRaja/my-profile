@@ -8,12 +8,10 @@ export default class AlbumCover extends Component{
     super(props);
 
     // initializing variable to contain JSX for album cover
-    this._albumCoversJSX = <div className="panel">
-                            <div className="panel-body">
-                              <img className="card-img-top" width="200px" height="auto" src={this.props.cover} alt={this.props.alt} />
-                            </div>
-                            <div className="panel-footer">
-                              <Link to={`/gallery/${this.props.id}`} id={`album-${this.props.id}`} className="btn btn-default">View Album</Link>
+    this._albumCoversJSX = <div className="panel col-md-4 gallery-panel">
+                            <img className="card-img-top gallery-image" src={this.props.cover} alt={this.props.alt} />
+                            <div className="panel-footer gallery-panel-footer">
+                              <Link to={`/gallery/${this.props.id}`} id={`album-${this.props.id}`} className="btn btn-primary col-md-offset-8">View Album</Link>
                             </div>
                           </div>;
 

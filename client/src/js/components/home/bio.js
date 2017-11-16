@@ -7,8 +7,8 @@ export default class Bio extends Component{
 
     // initializing variable to contain JSX for bio
     this._bioJSX = <div className="container well card">
-                    <img className="img-thumbnail rounded-float-left" width="250" height="auto" alt={this.props.alt} src={this.props.img}/>
-                    <p>
+                    <img className="col-md-4" width="250" height="auto" alt={this.props.alt} src={this.props.img}/>
+                    <p className="col-md-8">
                       {this.props.intro}
                     </p>
                   </div>;
