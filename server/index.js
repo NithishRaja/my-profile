@@ -9,7 +9,6 @@ var redisSession = require("node-redis-session");
 var configureViews = require("./views");
 var configureRoutes = require("./routes");
 var configureMainDatabase = require("./database/mongoDB").connect;
-var configureSessionDatabase = require("./database/redis");
 
 // initialize express
 const app = express();
