@@ -57,7 +57,12 @@ export default class Album extends Component{
 
   componentWillUpdate(newProps, newState){
     if(newProps.selectedAlbum!==null){
-      if(newState.activeImage===0){
+      if(newProps.selectedAlbum.images.length===1){
+        this._panelFooterJSX = <div className="panel-footer">
+                                  <button id={`previous-${newState.activeImage}`} className="btn btn-primary disabled" onClick={this.previousClicked.bind(this)}>{"previous"}</button>
+                                  <button id={`next-${newState.activeImage}`} className="btn btn-primary disabled col-md-offset-10" onClick={this.nextClicked.bind(this)}>{"next"}</button>
+                                </div>;
+      }else if(newState.activeImage===0){
         this._panelFooterJSX = <div className="panel-footer">
                                   <button id={`previous-${newState.activeImage}`} className="btn btn-primary disabled" onClick={this.previousClicked.bind(this)}>{"previous"}</button>
                                   <button id={`next-${newState.activeImage}`} className="btn btn-primary col-md-offset-10" onClick={this.nextClicked.bind(this)}>{"next"}</button>
