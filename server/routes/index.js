@@ -9,4 +9,18 @@ module.exports = function(app){
   app.route("/")
     .get(middleware.home);
 
+  app.route("/gallery")
+    .get(function(req, res){
+      res.redirect("/");
+    });
+
+  app.route("/blog")
+    .get(function(req, res){
+      res.redirect("/");
+    });
+
+  app.route("/gallery/:albumId")
+    .get(function(req, res){
+      res.redirect("/");
+    });
 }
